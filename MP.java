@@ -1,23 +1,24 @@
 import java.util.*;
-class A
+interface A
 {
-public void display()
-{
-System.out.println("Super Class 1");
-}
+public void display();
 }
 interface B
 {
-public void display1();
+public void display();
 }
-class C extends A implements B
+class C implements A,B
 {
 public void display1()
 {
 System.out.println("Interface");
 }
+public void display()
+{
+System.out.println("Interface");
 }
-class MPvthC
+}
+class MP
 {
 public static void main(String args[])
 {
